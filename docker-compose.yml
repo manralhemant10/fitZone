@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  dev-db:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_USER: hemant
+      MYSQL_DATABASE: fitZoneAuth
+      MYSQL_PASSWORD: password
+    networks:
+      - fitZoneNetwork
+networks:
+  fitZoneNetwork:
+  
